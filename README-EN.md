@@ -68,7 +68,7 @@ pip install torch torchvision torchaudio --index-url https://download.pytorch.or
 Install the main dependencies:
 
 ```bash
-pip install numpy opencv-python pillow matplotlib pandas openpyxl pyyaml scipy tqdm seaborn psutil
+pip install numpy opencv-python pillow matplotlib pandas openpyxl pyyaml scipy tqdm seaborn psutil ultralytics
 ```
 
 ## Usage
