@@ -42,18 +42,6 @@ ultralytics/cfg/models/11/yolo11-ripe-lightmoe.yaml
 
 The default dataset configuration is:
 
-```text
-ultralytics/datasets/mixedexposure.yaml
-```
-
-Dataset paths:
-
-```text
-train: ultralytics/datasets/MixExposure/images/train
-val:   ultralytics/datasets/MixExposure/images/val
-test:  ultralytics/datasets/MixExposure/images/test
-```
-
 Current class definition:
 
 ```text
