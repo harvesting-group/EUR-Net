@@ -1,0 +1,7 @@
+train: /media/strawberry/KINGSTON/code/work-2/paper-3/ExposureMoE/ultralytics/datasets/MixExposure/images/train
+val: /media/strawberry/KINGSTON/code/work-2/paper-3/ExposureMoE/ultralytics/datasets/MixExposure/images/val
+test: /media/strawberry/KINGSTON/code/work-2/paper-3/ExposureMoE/ultralytics/datasets/MixExposure/images/test
+
+# Classes
+names:
+  0: strawberry
