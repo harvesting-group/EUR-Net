@@ -36,7 +36,7 @@ ultralytics/cfg/models/11/yolo11-ripe-lightmoe.yaml
 - Strawberry instances
 - Instance masks
 - Ripeness values
-- Optional uncertainty / variance outputs in experimental branches
+- uncertainty / variance branches
 
 ## Dataset
 
