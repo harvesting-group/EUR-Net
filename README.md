@@ -7,7 +7,7 @@ ExposureMoE is a strawberry instance segmentation and ripeness estimation projec
 The project extends Ultralytics with:
 
 - A custom `ripe` task for instance segmentation and ripeness regression
-- `LightMoEStem` for illumination-aware feature modeling
+- `LightMoEStem` for exposuremoe-aware feature modeling
 
 Main project files:
 
@@ -30,7 +30,7 @@ Main model configurations:
 ultralytics/cfg/models/11/yolo11-ripe-lightmoe.yaml
 ```
 
-`yolo11-ripe-lightmoe.yaml` adds `LightMoEStem` before the backbone to model illumination-related features. The custom `Ripe` head predicts:
+`yolo11-ripe-lightmoe.yaml` adds `LightMoEStem` before the backbone to model exposure-related features. The custom `Ripe` head predicts:
 
 - Strawberry instances
 - Instance masks
