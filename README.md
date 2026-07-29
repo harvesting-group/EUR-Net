@@ -1,6 +1,6 @@
 # ExposureMoE
 
-ExposureMoE is a strawberry instance segmentation and ripeness estimation project built on a customized local branch of Ultralytics 8.3.0. It is designed to improve ripeness estimation robustness under mixed and uneven illumination using an illumination-aware Mixture-of-Experts module.
+ExposureMoE is a strawberry instance segmentation and ripeness estimation project built on a customized local branch of Ultralytics 8.3.0. It is designed to improve ripeness estimation robustness under mixed and uneven illumination using an exposure-aware Mixture-of-Experts module.
 
 ## Overview
 
@@ -8,7 +8,6 @@ The project extends Ultralytics with:
 
 - A custom `ripe` task for instance segmentation and ripeness regression
 - `LightMoEStem` for illumination-aware feature modeling
-- Training, validation, prediction, error analysis, and visualization scripts
 
 Main project files:
 
@@ -40,6 +39,8 @@ ultralytics/cfg/models/11/yolo11-ripe-lightmoe.yaml
 
 ## Dataset
 
+Onedrive Link: https://1drv.ms/f/c/e68b602748988e28/IgDHcDxc_qb-QJFKTASHRL7LATFXXLwtWmEE93305pHG0fw?e=SbFPZL
+
 The default dataset configuration is:
 
 Current class definition:
@@ -48,7 +49,9 @@ Current class definition:
 0: strawberry
 ```
 
-See `ultralytics/datasets/MixExposure/README-EN.md` for additional dataset information.
+## Checkpoint
+
+The link of best checkpoint: https://1drv.ms/u/c/e68b602748988e28/IQDLejLfZocJQImudUk3eUHVAVUhga5xdN94dOv0yxG51Tk?e=TaFzAV
 
 ## Installation
 
@@ -98,16 +101,11 @@ light_diverse=0.3
 python val_exposuremoe.py
 ```
 
-The default checkpoint is:
-
-```text
-runs/ripe/train_exposuremoe/weights/best.pt
-```
 
 ### Prediction
 
 ```bash
-python predict_moe.py
+python predict_exposuremoe.py
 ```
 
 The default prediction source is:
