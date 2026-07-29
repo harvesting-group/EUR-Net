@@ -48,11 +48,6 @@ Current class definition:
 ```text
 0: strawberry
 ```
-
-## Checkpoint
-
-The link of best checkpoint: https://1drv.ms/u/c/e68b602748988e28/IQDLejLfZocJQImudUk3eUHVAVUhga5xdN94dOv0yxG51Tk?e=TaFzAV
-
 ## Installation
 
 Create an isolated Python environment:
@@ -81,35 +76,14 @@ pip install numpy opencv-python pillow matplotlib pandas openpyxl pyyaml scipy t
 ```bash
 python train_exposuremoe.py
 ```
-
-Typical LightMoE auxiliary-loss settings include:
-
-```text
-light_corr=0.2
-light_route=1.0
-light_identity=0.5
-light_smooth=0.3
-light_balance=0.3
-light_diverse=0.3
-```
-
-> Before training, verify that the model path in `train_exposuremoe.py` matches the actual YAML filename in `ultralytics/cfg/models/11/`.
-
 ### Validation
 
 ```bash
 python val_exposuremoe.py
 ```
 
-
 ### Prediction
 
 ```bash
 python predict_exposuremoe.py
-```
-
-The default prediction source is:
-
-```text
-ultralytics/datasets/MixExposure/images/test
 ```
