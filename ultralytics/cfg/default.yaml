@@ -130,9 +130,9 @@ tracker: botsort.yaml # (str) tracker type, choices=[botsort.yaml, bytetrack.yam
 
 # LightMoE auxiliary losses (used by ripe models containing LightMoEStem)
 light_single_aux: False # (bool) enable illumination-aware auxiliary supervision
-light_corr: 1.0 # (float) exposure correction loss gain
+light_corr: 0.0 # (float) exposure correction loss gain
 light_route: 0.2 # (float) expert routing loss gain
-light_identity: 0.5 # (float) normal-region identity loss gain
-light_smooth: 0.01 # (float) confidence and routing smoothness loss gain
-light_balance: 0.01 # (float) expert load-balancing loss gain
-light_diverse: 0.01 # (float) expert feature diversity loss gain
+light_identity: 0.0 # (float) normal-region identity loss gain
+light_smooth: 0.00 # (float) confidence and routing smoothness loss gain
+light_balance: 0.00 # (float) expert load-balancing loss gain
+light_diverse: 0.00 # (float) expert feature diversity loss gain
