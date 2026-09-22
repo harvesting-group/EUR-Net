@@ -129,7 +129,7 @@ cfg: # (str, optional) for overriding defaults.yaml
 tracker: botsort.yaml # (str) tracker type, choices=[botsort.yaml, bytetrack.yaml]
 
 # LightMoE auxiliary losses (used by ripe models containing LightMoEStem)
-light_single_aux: False # (bool) enable illumination-aware auxiliary supervision
+light_single_aux: True # (bool) enable illumination-aware auxiliary supervision
 light_corr: 0.0 # (float) exposure correction loss gain
 light_route: 0.2 # (float) expert routing loss gain
 light_identity: 0.0 # (float) normal-region identity loss gain
